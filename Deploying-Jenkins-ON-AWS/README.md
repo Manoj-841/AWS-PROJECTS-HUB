@@ -40,7 +40,7 @@ Choosing the right OS is crucial for your Jenkins deployment.
 2. Select **Ubuntu Server 20.04 LTS** or the latest LTS version available
 3. This free-tier eligible option is ideal for learning and small deployments
 
-![Step 2: Ubuntu AMI Selection](./images/step-2-ubuntu-ami.png)
+![Step 2: Ubuntu AMI Selection](./images/Step2.png)
 
 ---
 
@@ -59,7 +59,7 @@ The instance type determines the computational power of your virtual machine.
 - **Memory Optimized (r5, r6, x1):** Large datasets and in-memory caches
 - **Storage Optimized (i3, i4):** High sequential I/O access to large datasets
 
-![Step 3: Instance Type Selection](./images/step-3-t2-micro.png)
+![Step 3: Instance Type Selection](./images/Step3.png)
 
 ---
 
@@ -74,7 +74,7 @@ The key pair is essential for secure SSH access to your instance.
 4. Click "Create key pair" — the .pem file will automatically download
 5. **Important:** Store this file in a secure location; you'll need it to connect to your instance
 
-![Step 4: Key Pair Creation](./images/step-4-keypair-creation.png)
+![Step 4: Key Pair Creation](./images/step4.png)
 
 ---
 
@@ -88,7 +88,7 @@ After completing all configurations, launch your instance.
 3. Wait for the instance to transition from "Pending" to "Running" state
 4. Refresh the EC2 Dashboard to see your new instance
 
-![Step 5: Instance Running State](./images/step-5-instance-running.png)
+![Step 5: Instance Running State](./images/step5.png)
 
 ---
 
@@ -330,3 +330,4 @@ For more information, visit:
 - Monitor your AWS billing to avoid unexpected charges
 
 - Update Jenkins and system packages regularly for security patches
+
