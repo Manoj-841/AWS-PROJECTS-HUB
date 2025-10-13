@@ -74,7 +74,7 @@ The key pair is essential for secure SSH access to your instance.
 4. Click "Create key pair" — the .pem file will automatically download
 5. **Important:** Store this file in a secure location; you'll need it to connect to your instance
 
-![Step 4: Key Pair Creation](./images/step4.png)
+![Step 4: Key Pair Creation](./images/Step4.png)
 
 ---
 
@@ -88,7 +88,7 @@ After completing all configurations, launch your instance.
 3. Wait for the instance to transition from "Pending" to "Running" state
 4. Refresh the EC2 Dashboard to see your new instance
 
-![Step 5: Instance Running State](./images/step5.png)
+![Step 5: Instance Running State](./images/Step5.png)
 
 ---
 
@@ -103,7 +103,7 @@ The instance dashboard displays critical information about your running instance
 - **Instance State:** Shows whether the instance is running, stopped, or terminated
 - **Availability Zone:** Geographic location of your instance
 
-**Screenshot Reference:** *Add a screenshot of the instance dashboard showing public IP, private IP, and instance state here*
+![Step 6: Instance Dashboard](./images/Step6.png)
 
 ---
 
@@ -124,7 +124,7 @@ Security groups act as firewalls controlling traffic to your instance.
 6. Also add HTTP (port 80) and HTTPS (port 443) if needed
 7. Click "Save rules"
 
-**Screenshot Reference:** *Add a screenshot of the security group with port 8080 rule added here*
+![Step 7: Security Group Configuration](./images/Step7.png)
 
 ---
 
@@ -143,7 +143,7 @@ MobaXterm is an advanced terminal emulator for Windows with built-in SSH client.
    - **Advanced Settings:** Check "Use private key" and browse to select your downloaded .pem file
 6. Click "OK"
 
-**Screenshot Reference:** *Add a screenshot of the MobaXterm SSH session configuration here*
+![Step 8: MobaXterm SSH Configuration](./images/Step8.png)
 
 ---
 
@@ -156,7 +156,7 @@ Upon successful connection, you'll see the Ubuntu terminal prompt.
 2. You should see the terminal showing something like: `ubuntu@ip-xxx-xxx-xxx-xxx:~$`
 3. This confirms you've successfully accessed your EC2 instance
 
-**Screenshot Reference:** *Add a screenshot of the successful terminal connection here*
+![Step 9: Terminal Connected Successfully](./images/Step9.png)
 
 ---
 
@@ -177,7 +177,7 @@ OpenJDK Runtime Environment (build 11.0.x+x-post-Ubuntu)
 
 **If Java is not installed**, proceed to Step 11.
 
-**Screenshot Reference:** *Add a screenshot showing the Java version check output here*
+![Step 10: Java Version Check](./images/Step10.png)
 
 ---
 
@@ -197,7 +197,7 @@ java -version
 - `sudo apt install openjdk-11-jdk -y` — Installs OpenJDK 11 (Java Development Kit)
 - `java -version` — Verifies the installation and displays the version
 
-**Screenshot Reference:** *Add a screenshot of the Java installation process and version confirmation here*
+![Step 11: Java Installation Process](./images/Step11.png)
 
 ---
 
@@ -228,7 +228,7 @@ sudo systemctl enable jenkins
 sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 ```
 
-**Screenshot Reference:** *Add a screenshot showing the Jenkins installation completion and the admin password here*
+![Step 12: Jenkins Installation and Admin Password](./images/Step12.png)
 
 ---
 
@@ -249,11 +249,7 @@ Now that Jenkins is installed and running, access it through your web browser.
    - Configure Jenkins URL
    - Start using Jenkins
 
-**Screenshot Reference:** *Add screenshots of:*
-- *Jenkins unlock page*
-- *Plugin installation screen*
-- *Admin user creation*
-- *Jenkins dashboard after setup*
+![Step 13: Jenkins Web Interface and Setup](./images/Step13.png)
 
 ---
 
@@ -272,11 +268,7 @@ With Jenkins fully set up, you can now create jobs and deploy applications.
 5. Monitor the build progress in the "Build History"
 6. View logs by clicking on the build number
 
-**Screenshot Reference:** *Add screenshots of:*
-- *Jenkins dashboard with job creation*
-- *Job configuration page*
-- *Successful build execution*
-- *Application deployed and running*
+![Step 14: Application Deployment with Jenkins](./images/Step14.png)
 
 ---
 
@@ -328,6 +320,4 @@ For more information, visit:
 - Keep your .pem file secure and never share it
 - Regularly back up your Jenkins configurations
 - Monitor your AWS billing to avoid unexpected charges
-
 - Update Jenkins and system packages regularly for security patches
-
