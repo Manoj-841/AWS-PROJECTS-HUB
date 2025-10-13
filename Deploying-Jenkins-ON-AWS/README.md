@@ -27,7 +27,7 @@ The first step is to launch an EC2 instance, which provides you with a virtual m
 4. Choose a name for your instance (e.g., "Jenkins-Server")
 5. Click "Launch Instance"
 
-![Step 1: EC2 Launch Page](./images/step-1-ec2-launch.png)
+![Step 1: EC2 Launch Page](./images/Step1.png)
 
 ---
 
@@ -328,4 +328,5 @@ For more information, visit:
 - Keep your .pem file secure and never share it
 - Regularly back up your Jenkins configurations
 - Monitor your AWS billing to avoid unexpected charges
+
 - Update Jenkins and system packages regularly for security patches
