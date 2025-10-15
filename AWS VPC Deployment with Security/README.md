@@ -43,7 +43,7 @@ The application is deployed in a secure VPC environment with:
 
 4. Enter VPC name: `project` (auto-generated name tag)
 
-![Step 1: VPC Creation Initiation](AWS%20VPC%20Deployment%20with%20Security/images/Step1.png)
+![Step 1: VPC Creation Initiation](./images/Step1.png)
 
 ---
 
@@ -52,7 +52,7 @@ The application is deployed in a secure VPC environment with:
 1. After initial creation, navigate to the VPC dashboard
 2. Rename the VPC from `project` to `demo` for better clarity
 
-![Step 2: VPC Renamed](AWS%20VPC%20Deployment%20with%20Security/images/Step2.png)
+![Step 2: VPC Renamed](./images/Step2.png)
 
 ---
 
@@ -68,7 +68,7 @@ The application is deployed in a secure VPC environment with:
 - Public Subnets: For internet-facing resources
 - Private Subnets: For backend resources without direct internet access
 
-![Step 3: Subnet Configuration](AWS%20VPC%20Deployment%20with%20Security/images/Step3.png)
+![Step 3: Subnet Configuration](./images/Step3.png)
 
 ---
 
@@ -81,7 +81,7 @@ The AWS console will now create all the components:
 - Route Tables
 - Route Table Associations
 
-![Step 4: Creating Components](AWS%20VPC%20Deployment%20with%20Security/images/Step4.png)
+![Step 4: Creating Components](./images/Step4.png)
 
 ---
 
@@ -91,7 +91,7 @@ The AWS console will now create all the components:
 2. View the complete VPC dashboard with all created resources
 3. Verify all components are successfully created
 
-![Step 5: VPC Dashboard](AWS%20VPC%20Deployment%20with%20Security/images/Step5.png)
+![Step 5: VPC Dashboard](./images/Step5.png)
 
 ---
 
@@ -101,7 +101,7 @@ The AWS console will now create all the components:
 2. View the visual representation of your VPC architecture
 3. This shows the flow and relationship between all components
 
-![Step 6: Resource Map](AWS%20VPC%20Deployment%20with%20Security/images/Step6.png)
+![Step 6: Resource Map](./images/Step6.png)
 
 ---
 
@@ -129,7 +129,7 @@ Internet
 1. **Network ACL (NACL)** - Stateless firewall at subnet level
 2. **Security Group** - Stateful firewall at instance level
 
-![Step 7: Architecture Diagram](AWS%20VPC%20Deployment%20with%20Security/images/Step7.png)
+![Step 7: Architecture Diagram](./images/Step7.png)
 
 ---
 
@@ -141,7 +141,7 @@ Internet
 2. Click **"Launch Instance"**
 3. Enter instance name: `demo-instance`
 
-![Step 8: EC2 Instance Creation](AWS%20VPC%20Deployment%20with%20Security/images/Step8.png)
+![Step 8: EC2 Instance Creation](./images/Step8.png)
 
 ---
 
@@ -150,7 +150,7 @@ Internet
 1. Choose **Ubuntu** from the AMI list
 2. Select the appropriate Ubuntu version (e.g., Ubuntu Server 22.04 LTS)
 
-![Step 9: Ubuntu OS Selection](AWS%20VPC%20Deployment%20with%20Security/images/Step9.png)
+![Step 9: Ubuntu OS Selection](./images/Step9.png)
 
 ---
 
@@ -161,7 +161,7 @@ Internet
    - Sufficient for simple Python application
 2. Select your existing key pair (or create new one if needed)
 
-![Step 10: Instance Type](AWS%20VPC%20Deployment%20with%20Security/images/Step10.png)
+![Step 10: Instance Type](./images/Step10.png)
 
 ---
 
@@ -176,7 +176,7 @@ Configure the following network settings:
 
 **Important:** Keep the security group settings default for now. We'll modify them later.
 
-![Step 11: Network Settings](AWS%20VPC%20Deployment%20with%20Security/images/Step11.png)
+![Step 11: Network Settings](./images/Step11.png)
 
 ---
 
@@ -187,7 +187,7 @@ Configure the following network settings:
 3. Note the **Private IP Address** (e.g., 10.0.x.x)
 4. Verify instance state is **"Running"**
 
-![Step 12: Instance Details](AWS%20VPC%20Deployment%20with%20Security/images/Step12.png)
+![Step 12: Instance Details](./images/Step12.png)
 
 ---
 
@@ -204,7 +204,7 @@ Configure the following network settings:
    - **Use private key**: Browse and select your `.pem` file
 5. Click **"OK"** to save the session
 
-![Step 13: MobaXterm Configuration](AWS%20VPC%20Deployment%20with%20Security/images/Step13.png)
+![Step 13: MobaXterm Configuration](./images/Step13.png)
 
 ---
 
@@ -214,7 +214,7 @@ Configure the following network settings:
 2. Accept the security warning (first-time connection)
 3. You should now be connected to your EC2 instance
 
-![Step 14: SSH Connected](AWS%20VPC%20Deployment%20with%20Security/images/Step14.png)
+![Step 14: SSH Connected](./images/Step14.png)
 
 ---
 
@@ -226,7 +226,7 @@ Configure the following network settings:
    ```
 2. Verify Python3 is installed
 
-![Step 15: Python Verification](AWS%20VPC%20Deployment%20with%20Security/images/Step15.png)
+![Step 15: Python Verification](./images/Step15.png)
 
 ---
 
@@ -244,7 +244,7 @@ Configure the following network settings:
 - Serves files from the current directory
 - Listens on port 8000 for incoming connections
 
-![Step 16: Python Server Running](AWS%20VPC%20Deployment%20with%20Security/images/Step16.png)
+![Step 16: Python Server Running](./images/Step16.png)
 
 ---
 
@@ -257,7 +257,7 @@ Configure the following network settings:
 **Why it's not working?**
 The security group doesn't allow inbound traffic on port 8000 yet.
 
-![Step 17: Access Failed](AWS%20VPC%20Deployment%20with%20Security/images/Step17.png)
+![Step 17: Access Failed](./images/Step17.png)
 
 ---
 
@@ -275,7 +275,7 @@ The security group doesn't allow inbound traffic on port 8000 yet.
 - The issue is NOT with NACLs
 - The problem lies with Security Groups
 
-![Step 18: NACL Rules Check](AWS%20VPC%20Deployment%20with%20Security/images/Step18.png)
+![Step 18: NACL Rules Check](./images/Step18.png)
 
 ---
 
@@ -295,7 +295,7 @@ The security group doesn't allow inbound traffic on port 8000 yet.
 
 **Security Note:** In production, restrict the source to specific IP addresses or ranges.
 
-![Step 19: Security Group Rule Added](AWS%20VPC%20Deployment%20with%20Security/images/Step19.png)
+![Step 19: Security Group Rule Added](./images/Step19.png)
 
 ---
 
@@ -308,7 +308,7 @@ The security group doesn't allow inbound traffic on port 8000 yet.
 
 **Success!** The application is now deployed and accessible from the internet.
 
-![Step 20: Application Running](AWS%20VPC%20Deployment%20with%20Security/images/Step20.png)
+![Step 20: Application Running](./images/Step20.png)
 
 ---
 
@@ -326,7 +326,7 @@ Let's test NACL functionality by blocking traffic:
 
 **Expected Result:** Application should become inaccessible
 
-![Step 21: NACL Traffic Blocked](AWS%20VPC%20Deployment%20with%20Security/images/Step21.png)
+![Step 21: NACL Traffic Blocked](./images/Step21.png)
 
 ---
 
@@ -338,7 +338,7 @@ Let's test NACL functionality by blocking traffic:
 
 **This demonstrates:** NACLs act as the first line of defense before Security Groups.
 
-![Step 22: Application Blocked](AWS%20VPC%20Deployment%20with%20Security/images/Step22.png)
+![Step 22: Application Blocked](./images/Step22.png)
 
 ---
 
@@ -369,7 +369,7 @@ Configure NACL rules to demonstrate rule evaluation order:
 
 **Key Takeaway:** Rule number order is critical in NACLs!
 
-![Step 23: NACL Priority Demo](AWS%20VPC%20Deployment%20with%20Security/images/Step23.png)
+![Step 23: NACL Priority Demo](./images/Step23.png)
 
 ---
 
@@ -535,3 +535,4 @@ Project: AWS VPC Deployment with Security
 ## License
 
 This project is for educational purposes.
+
